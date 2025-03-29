@@ -87,7 +87,7 @@
 
 ## 关于作者
 
-本项目由 [@YourName](https://github.com/YourName) 开发和维护。
+本项目由 [@huihuichen1](https://github.com/huihuichen1) 开发和维护。
 
 ## 许可证
 
