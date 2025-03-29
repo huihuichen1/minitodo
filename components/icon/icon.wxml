@@ -1,7 +1,15 @@
 <view class="icon" style="color: {{color}}; font-size: {{size}}px;">
-  <block wx:if="{{type === 'play'}}">▶️</block>
-  <block wx:elif="{{type === 'pause'}}">⏸️</block>
-  <block wx:elif="{{type === 'reset'}}">🔄</block>
-  <block wx:elif="{{type === 'skip'}}">⏭️</block>
+  <block wx:if="{{type === 'play'}}">
+    <text class="iconfont icon-play"></text>
+  </block>
+  <block wx:elif="{{type === 'pause'}}">
+    <text class="iconfont icon-pause"></text>
+  </block>
+  <block wx:elif="{{type === 'reset'}}">
+    <text class="iconfont icon-reset"></text>
+  </block>
+  <block wx:elif="{{type === 'skip'}}">
+    <text class="iconfont icon-forward"></text>
+  </block>
   <block wx:else>{{type}}</block>
 </view> 

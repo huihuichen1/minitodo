@@ -66,12 +66,6 @@
     </view>
   </view>
   
-  <!-- 如果没有数据，显示提示信息 -->
-  <view class="no-data-tip" wx:if="{{chartData.length === 0 || summaryData.count === 0}}">
-    <icon type="info" size="64" color="#ccc"></icon>
-    <text>暂无数据，快去完成第一个番茄钟吧！</text>
-  </view>
-  
   <!-- 添加自定义导航栏 -->
   <custom-tab-bar active="{{1}}" theme="{{currentPeriod === '日' ? 'shortBreak' : 'work'}}"></custom-tab-bar>
 </view> 

@@ -1,0 +1,21 @@
+<view class="icon" style="width: {{size}}px; height: {{size}}px;">
+  <block wx:if="{{name === 'play'}}">
+    <view class="play" style="border-color: transparent transparent transparent {{color}};">
+    </view>
+  </block>
+  <block wx:elif="{{name === 'pause'}}">
+    <view class="pause" style="background-color: {{color}};">
+      <view class="pause-bar" style="background-color: {{color}};"></view>
+    </view>
+  </block>
+  <block wx:elif="{{name === 'reset'}}">
+    <view class="reset" style="border-color: {{color}};">
+      <view class="reset-arrow" style="border-color: transparent {{color}} transparent transparent;"></view>
+    </view>
+  </block>
+  <block wx:elif="{{name === 'forward'}}">
+    <view class="forward" style="border-color: transparent transparent transparent {{color}};">
+      <view class="forward-arrow" style="border-color: transparent transparent transparent {{color}};"></view>
+    </view>
+  </block>
+</view> 

@@ -314,5 +314,37 @@ Page({
     if (this.data.timer) {
       clearInterval(this.data.timer);
     }
+  },
+
+  fastForward: function() {
+    // 快进30秒
+    let remaining = this.data.remainingSeconds - 30;
+    if (remaining <= 0) {
+      remaining = 0;
+    }
+    
+    this.setData({
+      remainingSeconds: remaining,
+      timerDisplay: this.formatTime(remaining),
+      progressPercent: 100 - (remaining / this.data.totalSeconds * 100)
+    });
+
+    // 如果快进后没有剩余时间，结束当前模式
+    if (remaining <= 0) {
+      // 保存完成的番茄钟记录
+      this.saveCompletedSession();
+      
+      // 振动和提示
+      wx.vibrateLong();
+      wx.showToast({
+        title: `${this.data.currentMode}时间结束！`,
+        icon: 'success',
+        duration: 2000
+      });
+      
+      // 自动切换到下一个模式
+      const nextMode = this.getNextMode();
+      this.setMode({ currentTarget: { dataset: { mode: nextMode } } });
+    }
   }
 }) 

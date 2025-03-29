@@ -3,52 +3,52 @@
     <view class="settings-item" bindtap="navigateToSetting" data-type="work">
       <view class="settings-item-left">
         <view class="settings-icon work-icon">
-          <text class="iconfont icon-work"></text>
+          <text class="mp-icon">⏱️</text>
         </view>
         <view class="settings-item-text">专注时长</view>
       </view>
       <view class="settings-item-right">
         <text>{{workTime}}分钟</text>
-        <text class="iconfont icon-arrow"></text>
+        <text class="mp-icon">></text>
       </view>
     </view>
     
     <view class="settings-item" bindtap="navigateToSetting" data-type="break">
       <view class="settings-item-left">
         <view class="settings-icon break-icon">
-          <text class="iconfont icon-break"></text>
+          <text class="mp-icon">☕</text>
         </view>
         <view class="settings-item-text">休息时长</view>
       </view>
       <view class="settings-item-right">
         <text>{{shortBreakTime}}分钟 / {{longBreakTime}}分钟</text>
-        <text class="iconfont icon-arrow"></text>
+        <text class="mp-icon">></text>
       </view>
     </view>
     
     <view class="settings-item" bindtap="navigateToSetting" data-type="sound">
       <view class="settings-item-left">
         <view class="settings-icon sound-icon">
-          <text class="iconfont icon-sound"></text>
+          <text class="mp-icon">🔔</text>
         </view>
         <view class="settings-item-text">提示音效</view>
       </view>
       <view class="settings-item-right">
         <text>{{sound}}</text>
-        <text class="iconfont icon-arrow"></text>
+        <text class="mp-icon">></text>
       </view>
     </view>
     
     <view class="settings-item" bindtap="navigateToSetting" data-type="theme">
       <view class="settings-item-left">
         <view class="settings-icon theme-icon">
-          <text class="iconfont icon-theme"></text>
+          <text class="mp-icon">🎨</text>
         </view>
         <view class="settings-item-text">主题颜色</view>
       </view>
       <view class="settings-item-right">
         <text>{{theme}}</text>
-        <text class="iconfont icon-arrow"></text>
+        <text class="mp-icon">></text>
       </view>
     </view>
   </view>
@@ -58,12 +58,12 @@
     <view class="settings-item warning" bindtap="clearAllData">
       <view class="settings-item-left">
         <view class="settings-icon delete-icon">
-          <text class="iconfont icon-delete"></text>
+          <text class="mp-icon">🗑️</text>
         </view>
         <view class="settings-item-text">清除所有番茄钟记录</view>
       </view>
       <view class="settings-item-right">
-        <text class="iconfont icon-arrow"></text>
+        <text class="mp-icon">></text>
       </view>
     </view>
   </view>

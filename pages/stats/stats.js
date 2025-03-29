@@ -10,7 +10,7 @@ Page({
       rate: '0%'
     },
     focusRecords: [], // 存储当前时间维度下的专注记录列表
-    showRecordsList: false // 控制是否显示记录列表
+    showRecordsList: true // 默认展开记录列表
   },
 
   onLoad: function() {

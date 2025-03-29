@@ -8,13 +8,13 @@
   
   <view class="timer-controls">
     <view class="control-btn" bindtap="resetTimer" animation="{{resetAnimation}}">
-      <text class="iconfont icon-reset"></text>
+      <custom-icon name="reset" color="{{currentThemeColor}}" size="24"/>
     </view>
     <view class="control-btn primary" bindtap="toggleTimer" style="background-color: {{currentThemeColor}}">
-      <text class="iconfont {{isRunning ? 'icon-pause' : 'icon-play'}}"></text>
+      <custom-icon name="{{isRunning ? 'pause' : 'play'}}" color="white" size="28"/>
     </view>
-    <view class="control-btn" bindtap="skipTimer">
-      <text class="iconfont icon-forward"></text>
+    <view class="control-btn" bindtap="fastForward">
+      <custom-icon name="forward" color="{{currentThemeColor}}" size="24"/>
     </view>
   </view>
   
